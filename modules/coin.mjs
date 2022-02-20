@@ -19,7 +19,7 @@ function coinFlip() {
   if (flip > 0.5) {
     result = "heads"
   } else {
-    resuly = "tails"
+    result = "tails"
   }
   return result;
 }
