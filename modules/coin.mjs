@@ -14,14 +14,14 @@
  * 
  */
 
-function coinFlip() {
+export function coinFlip() {
   let flip = Math.random()
-  if (flip > 0.5) {
+  if (flip < 0.5) {
     result = "heads"
   } else {
     result = "tails"
   }
-  return result;
+  return result
 }
 
 /** Multiple coin flips
