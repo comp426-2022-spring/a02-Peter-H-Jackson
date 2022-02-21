@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-spring/a02-Peter-H-Jackson/issues"
   },
-  "homepage": "https://github.com/comp426-2022-spring/a02-Peter-H-Jackson#readme"
+  "homepage": "https://github.com/comp426-2022-spring/a02-Peter-H-Jackson#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
