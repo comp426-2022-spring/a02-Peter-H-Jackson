@@ -37,9 +37,8 @@ function coinFlip() {
     ]
  */
 function coinFlips(flips) {
-  let n = flips | 1
   const record = []
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < flips; i++) {
     record[i] = coinFlip()
   }
   return record

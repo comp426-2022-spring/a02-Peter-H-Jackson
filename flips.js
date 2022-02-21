@@ -2,6 +2,7 @@ import minimist from "minimist"
 import { coinFlips } from "./modules/coin.mjs";
 
 const args = minimist(process.argv.slice(2))
+if (args.number == null) { args.number = 1 }
 
 let record = coinFlips(args.number)
 console.log(record)
@@ -15,3 +16,4 @@ for (let i = 0; i < args.number; i++) {
     }
 }
 console.log("{ tails: " + tails +", heads:" + heads + " }")
+console.log(args.number)
