@@ -16,7 +16,6 @@
 
 function coinFlip() {
   return Math.random() > 0.5 ? ("heads") : ("tails");
-  console.log("idk")
 }
 export { coinFlip }
 
