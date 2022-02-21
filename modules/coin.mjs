@@ -16,6 +16,7 @@
 
 export function coinFlip() {
   let flip = Math.random()
+  let result = ""
   if (flip < 0.5) {
     result = "heads"
   } else {
@@ -23,6 +24,8 @@ export function coinFlip() {
   }
   return result
 }
+
+console.log(coinFlip())
 
 /** Multiple coin flips
  * 
@@ -84,4 +87,3 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export { coinFlip, coinFlips, countFlips, flipACoin }
