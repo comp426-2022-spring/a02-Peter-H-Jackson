@@ -8,7 +8,7 @@ let record = coinFlips(args.number)
 console.log(record)
 
 if (args.number <= 1) {
-    data = countFlips(record)
+    let data = countFlips(record)
     if (data.heads == 1) {
         console.log("{heads: " + data.heads + "}")
     } else {
