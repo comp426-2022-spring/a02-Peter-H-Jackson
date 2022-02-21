@@ -16,4 +16,3 @@ for (let i = 0; i < args.number; i++) {
     }
 }
 console.log("{ tails: " + tails +", heads:" + heads + " }")
-console.log(args.number)
