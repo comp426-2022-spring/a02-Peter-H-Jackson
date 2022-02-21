@@ -1,7 +1,7 @@
 import minimist from "minimist"
 import { coinFlips } from "./modules/coin.mjs";
 
-const args = minimist(process.argv.slice(2)) | 1
+const args = minimist(process.argv.slice(2))
 
 let record = coinFlips(args.number)
 console.log(record)
