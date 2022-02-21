@@ -58,7 +58,17 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  let count = { heads: 0, tails: 0 }
 
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == "heads") {
+      count.heads++
+    } else {
+      count.tails++
+    }
+  }
+
+  return count
 }
 
 /** Flip a coin!
@@ -73,7 +83,8 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-
+  let flip = coinFlip();
+  return {call: call, flip: flip, result: flip == call ? "win" : "lose" }
 }
 
 
@@ -81,4 +92,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export { coinFlip, coinFlips }
+export { coinFlip, coinFlips, countFlips, flipACoin }
