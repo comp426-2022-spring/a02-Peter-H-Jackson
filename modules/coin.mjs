@@ -17,7 +17,6 @@
 function coinFlip() {
   return Math.random() > 0.5 ? ("heads") : ("tails");
 }
-export { coinFlip }
 
 /** Multiple coin flips
  * 
@@ -37,9 +36,12 @@ export { coinFlip }
       'tails', 'heads'
     ]
  */
-
 function coinFlips(flips) {
-
+  const record = []
+  for (let i = 0; i < flips; i++) {
+    record[i] = coinFlip()
+  }
+  return record
 }
 
 /** Count multiple flips
@@ -79,3 +81,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export { coinFlip, coinFlips }
