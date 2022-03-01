@@ -9,8 +9,10 @@ let record = coinFlips(args.number)
 if (args.number <= 1) {
     let data = countFlips(record)
     if (data.heads == 1) {
+        console.log("['" + "heads" + "']")
         console.log("{heads: " + data.heads + "}")
     } else {
+        console.log("['" + "tails" + "']")
         console.log("{tails: " + data.tails + "}")
     }
 } else {
